@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root {
+  /* --- LIGHT MODE VARIABLES --- */
+  --bg-main: #f8fafc;      /* Light Grey Background */
+  --bg-card: #ffffff;      /* White Cards */
+  --bg-input: #f1f5f9;     /* Input Background */
+  
+  --text-main: #0f172a;    /* Dark Text */
+  --text-muted: #64748b;   /* Grey Text */
+  
+  --primary: #4f46e5;      /* Indigo Brand Color */
+  --primary-glow: rgba(79, 70, 229, 0.15);
+  
+  --border: #e2e8f0;       /* Light Borders */
+}
+
+[data-theme='dark'] {
+  /* --- DARK MODE VARIABLES --- */
+  --bg-main: #020617;      /* Deep Midnight Background */
+  --bg-card: rgba(15, 23, 42, 0.6); /* Glassy Dark Cards */
+  --bg-input: rgba(0, 0, 0, 0.3);
+  
+  --text-main: #f8fafc;    /* White Text */
+  --text-muted: #94a3b8;   /* Muted Text */
+  
+  --primary: #6366f1;      /* Lighter Indigo for Dark Mode */
+  --primary-glow: rgba(99, 102, 241, 0.25);
+  
+  --border: rgba(255, 255, 255, 0.08); /* Subtle White Borders */
+}
+
+/* Base Styles using the Variables */
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
