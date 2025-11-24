@@ -1,4 +1,3 @@
-// src/hooks/useAuth.js
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import useAuthStore from './useAuthStore';
@@ -16,7 +15,7 @@ const useAuth = () => {
     try {
       const response = await action(...args);
       setLogin(response.user, response.token);
-      navigate('/'); // Redirect to dashboard on successful login/register
+      navigate('/');
     } catch (err) {
       setError(err.message || 'An unexpected error occurred.');
     } finally {
@@ -29,7 +28,7 @@ const useAuth = () => {
 
   const logout = () => {
     setLogout();
-    navigate('/login'); // Redirect to login page on logout
+    navigate('/login'); 
   };
 
   return {

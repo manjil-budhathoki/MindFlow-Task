@@ -1,4 +1,3 @@
-// src/hooks/usePosts.js
 import { useEffect } from 'react';
 import usePostsStore from './usePostsStore';
 import * as postService from '../services/postService';
@@ -22,7 +21,7 @@ const usePosts = () => {
     if (posts.length === 0) {
       fetchAllPosts();
     }
-  }, [posts.length]); // Dependency array ensures this runs only when posts array length changes from 0
+  }, [posts.length]); 
 
   const fetchAllPosts = async () => {
     setLoading(true);

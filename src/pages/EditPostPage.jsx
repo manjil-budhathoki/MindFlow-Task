@@ -1,4 +1,3 @@
-// src/pages/EditPostPage.jsx
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import usePosts from '../hooks/usePosts';

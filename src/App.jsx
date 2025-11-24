@@ -1,4 +1,3 @@
-// src/App.jsx
 import React, { useEffect } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import useThemeStore from './hooks/useThemeStore';
@@ -17,7 +16,6 @@ const App = () => {
   const { theme } = useThemeStore();
 
   useEffect(() => {
-    // This is the magic line. It sets data-theme="dark" or "light" on the <html> tag.
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
 

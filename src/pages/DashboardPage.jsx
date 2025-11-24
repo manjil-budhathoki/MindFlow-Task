@@ -1,4 +1,3 @@
-// src/pages/DashboardPage.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import usePosts from '../hooks/usePosts';
@@ -59,7 +58,6 @@ const DashboardPage = () => {
 
       {/* 4. Content Grid */}
       {posts.length === 0 ? (
-        // Empty State
         <div className="text-center py-24 bg-gray-50 dark:bg-slate-800/50 rounded-3xl border-2 border-dashed border-gray-200 dark:border-slate-700">
           <div className="mx-auto w-16 h-16 bg-indigo-100 dark:bg-indigo-900/50 rounded-full flex items-center justify-center text-indigo-600 dark:text-indigo-400 mb-4">
             <FaPenNib size={24} />
@@ -76,7 +74,6 @@ const DashboardPage = () => {
           </Link>
         </div>
       ) : (
-        // The Grid
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {posts.map((post) => (
             <PostCard 

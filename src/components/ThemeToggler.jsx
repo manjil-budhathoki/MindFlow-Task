@@ -1,7 +1,6 @@
-// src/components/ThemeToggler.js
 import React from 'react';
 import useThemeStore from '../hooks/useThemeStore';
-import { FaSun, FaMoon } from 'react-icons/fa'; // Import icons
+import { FaSun, FaMoon } from 'react-icons/fa';
 
 const ThemeToggler = () => {
   const { theme, toggleTheme } = useThemeStore();

@@ -1,4 +1,3 @@
-// src/hooks/usePostsStore.js
 import { create } from 'zustand';
 
 const usePostsStore = create((set) => ({

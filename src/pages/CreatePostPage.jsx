@@ -1,4 +1,3 @@
-// src/pages/CreatePostPage.jsx
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import usePosts from '../hooks/usePosts';
@@ -10,7 +9,7 @@ const CreatePostPage = () => {
 
   const handleCreatePost = async (postData) => {
     try {
-      // In a real app, userId comes from the auth token/context
+      
       const newPost = { ...postData, userId: 1 };
       await createPost(newPost);
       navigate('/stories');

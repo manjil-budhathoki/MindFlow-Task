@@ -1,4 +1,3 @@
-// src/components/PostForm.jsx
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import * as yup from 'yup';
@@ -23,7 +22,7 @@ const PostForm = ({ initialData = DEFAULT_POST_DATA, onSubmit, isEditing = false
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevState => ({ ...prevState, [name]: value }));
-    // Clear error when user types
+
     if (errors[name]) {
       setErrors(prevErrors => ({ ...prevErrors, [name]: null }));
     }
@@ -79,7 +78,7 @@ const PostForm = ({ initialData = DEFAULT_POST_DATA, onSubmit, isEditing = false
         {/* 2. The Editor Surface */}
         <div className="min-h-[60vh] animate-fade-in-up">
           
-          {/* Title Input */}
+
           <div className="mb-6">
             <input
               type="text"
@@ -94,7 +93,7 @@ const PostForm = ({ initialData = DEFAULT_POST_DATA, onSubmit, isEditing = false
             {errors.title && <p className="mt-2 text-sm text-red-500 font-medium">{errors.title}</p>}
           </div>
 
-          {/* Body Textarea (Auto-expanding feel) */}
+
           <div className="relative">
             <textarea
               name="body"

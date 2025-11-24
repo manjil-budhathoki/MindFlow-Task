@@ -1,4 +1,3 @@
-// src/services/postService.js
 import axios from 'axios';
 
 const API_URL = 'https://jsonplaceholder.typicode.com';
@@ -7,7 +6,6 @@ const API_URL = 'https://jsonplaceholder.typicode.com';
 export const fetchPosts = async () => {
   try {
     const response = await axios.get(`${API_URL}/posts`);
-    // We'll just get the first 10 posts for simplicity
     return response.data.slice(0, 10);
   } catch (error) {
     console.error("Error fetching posts:", error);
@@ -16,7 +14,6 @@ export const fetchPosts = async () => {
 };
 
 // Add a new post
-// Note: The API will fake the creation and return an object with an ID.
 export const addPost = async (postData) => {
   try {
     const response = await axios.post(`${API_URL}/posts`, postData);

@@ -1,4 +1,3 @@
-// src/pages/HomePage.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowRight, FaPenNib, FaHashtag, FaUserFriends } from 'react-icons/fa';
@@ -10,7 +9,6 @@ const HomePage = () => {
       {/* 1. Main Hero Content (Centered) */}
       <div className="flex-grow flex flex-col justify-center items-center text-center px-4 z-10 -mt-10 animate-fade-in-up">
         
-        {/* Subtle 'New' Pill */}
         <div className="inline-flex items-center justify-center mb-8">
           <span className="px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 backdrop-blur-md">
             v2.0 Now Live
@@ -63,7 +61,6 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* 3. Bottom Stats Bar (Social Proof) */}
       <div className="absolute bottom-0 left-0 right-0 border-t border-white/5 bg-slate-950/50 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between md:justify-center md:gap-20 text-slate-500 text-sm">
           <div className="flex items-center gap-2">

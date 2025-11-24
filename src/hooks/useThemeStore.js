@@ -1,11 +1,10 @@
-// src/hooks/useThemeStore.js
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
 const useThemeStore = create(
   persist(
     (set) => ({
-      theme: 'dark', // Default preference
+      theme: 'dark', 
       
       toggleTheme: () => set((state) => {
         const newTheme = state.theme === 'light' ? 'dark' : 'light';
@@ -18,9 +17,6 @@ const useThemeStore = create(
 
       // Helper to initialize on app load
       initTheme: () => {
-        // This gets the current state from localStorage (via persist)
-        // We can't access 'state' directly here easily in basic Zustand, 
-        // so we usually handle this in a useEffect in App.jsx
       }
     }),
     {

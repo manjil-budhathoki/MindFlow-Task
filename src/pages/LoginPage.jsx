@@ -1,4 +1,3 @@
-// src/pages/LoginPage.jsx
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
@@ -53,7 +52,7 @@ const LoginPage = () => {
           </div>
         </div>
 
-        {/* RIGHT SIDE: The Form (Larger & Spaced Out) */}
+        {/* RIGHT SIDE: */}
         <div className="p-8 sm:p-12 flex flex-col justify-center bg-slate-950/30">
           
           <div className="mb-8">
@@ -69,7 +68,7 @@ const LoginPage = () => {
               </div>
             )}
 
-            {/* Email - Increased height with py-4 */}
+            {/* Email  */}
             <div className="space-y-2">
               <label className="text-xs font-bold text-slate-300 uppercase tracking-wider ml-1">Email Address</label>
               <div className="relative group">
@@ -89,7 +88,7 @@ const LoginPage = () => {
               </div>
             </div>
 
-            {/* Password - Increased height with py-4 */}
+            {/* Password  */}
             <div className="space-y-2">
               <div className="flex justify-between items-center ml-1">
                 <label className="text-xs font-bold text-slate-300 uppercase tracking-wider">Password</label>

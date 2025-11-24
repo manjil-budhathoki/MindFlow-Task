@@ -1,10 +1,7 @@
-// src/components/PostCard.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaEdit, FaTrash, FaUser, FaClock } from 'react-icons/fa';
 
-// Helper: Generates a pleasing gradient based on the Post ID
-// This makes the blog look colorful and designed without needing real images.
 const getGradient = (id) => {
   const gradients = [
     "from-rose-400 to-orange-300",
