@@ -1,9 +1,11 @@
 # MindFlow.
 
-![MindFlow Banner](https://via.placeholder.com/1200x600/0f172a/ffffff?text=MindFlow+App+Preview)
+![MindFlow Banner](public/blog.png)
 
 > **Where good ideas find their voice.**  
 > A minimalist, distraction-free platform for writers and thinkers.
+
+### 🚀 [View Live Demo](https://mind-flow-task.vercel.app/)
 
 ---
 
@@ -75,4 +77,3 @@ src/
 ├── index.css        # Global Styles & CSS Variables definition
 ├── main.jsx         # Entry point
 └── App.jsx          # Routing & Theme Integration
-
